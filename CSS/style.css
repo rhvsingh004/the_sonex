@@ -14,9 +14,14 @@
     --color-4: #ccc;
 }
 
+img {
+    max-width: 100%;
+    display: block
+}
+
 body,
 html {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif
 }
 
 
@@ -242,8 +247,8 @@ nav.white ul li a:hover {
 }
 
 .card-inner {
-    width: 300px;
-    height: 200px;
+    width: 280px;
+    aspect-ratio: 1 / 1;
     position: relative;
     transition: transform 0.6s;
     transform-style: preserve-3d;
@@ -288,6 +293,19 @@ nav.white ul li a:hover {
     transform: rotateY(180deg);
 }
 
+.card-back > div {
+    position: relative;
+}
+
+.card-title {
+    position: absolute;
+    inset-inline: 0;
+    top: auto;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 0
+}
 
 .tranform_div {
 	height: 100vh;
